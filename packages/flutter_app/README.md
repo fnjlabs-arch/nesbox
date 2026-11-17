@@ -1,6 +1,6 @@
-# NESBox for Android/iOS
+# SadSha GameBox for Android/iOS
 
-Similar to xBOX, Design [prototype](https://www.figma.com/file/XSQ8Pc5s1SBpbyqDUFzdZe/NESBox-Flutter?node-id=0%3A1)
+Similar to xBOX, Design [prototype](https://www.figma.com/file/XSQ8Pc5s1SBpbyqDUFzdZe/SadSha GameBox-Flutter?node-id=0%3A1)
 
 ## development
 

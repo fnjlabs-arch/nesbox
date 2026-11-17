@@ -79,9 +79,9 @@ export class MLobbyChatElement extends GemElement {
   render = () => {
     const { lobbyMessage, lobbyInfo } = store;
     return html`
-      <nesbox-scroll ${this.#messageRef} class="list">
+      <sadsha-gamebox-scroll ${this.#messageRef} class="list">
         ${lobbyMessage.map((msg) => html`<m-lobby-msg .msg=${msg}></m-lobby-msg>`)}
-      </nesbox-scroll>
+      </sadsha-gamebox-scroll>
       ${
         this.#state.start
           ? html`

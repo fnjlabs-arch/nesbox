@@ -33,10 +33,10 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-list')
+@customElement('sadsha-gamebox-list')
 @adoptedStyle(style)
 @adoptedStyle(focusStyle)
-export class NesboxListElement extends GemElement {
+export class SadShaGameBoxListElement extends GemElement {
   @property data: { img: string; label: string; tag: string; onClick: (evt: PointerEvent) => void }[];
   render = () => {
     return html`

@@ -1,4 +1,4 @@
-import { Component, registerComponent } from '@mantou/ecs';
+import { Component, registerComponent } from '@sadsha-gamebox/ecs';
 
 const pieceTypeList = [
   [

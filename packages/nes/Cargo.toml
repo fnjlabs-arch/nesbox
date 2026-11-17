@@ -7,7 +7,7 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-nesbox_utils = { path = "utils" }
+sadsha_gamebox_utils = { path = "utils" }
 tetanes = { path = "../../deps/tetanes", default-features = false }
 
 # uuid is pulled in transitively by bevy_utils; on wasm32 it requires an

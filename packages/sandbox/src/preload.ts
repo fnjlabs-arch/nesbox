@@ -54,7 +54,7 @@ export function preload() {
   };
 
   class SandboxConsole {
-    _logs = [['log', 'NESBox Sandbox Loaded']];
+    _logs = [['log', 'SadSha GameBox Sandbox Loaded']];
     _log = (type: string, ...args: any[]) => {
       this._logs.push([
         type,

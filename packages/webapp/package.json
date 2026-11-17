@@ -1,5 +1,5 @@
 {
-  "name": "@nesbox/webapp",
+  "name": "@sadsha-gamebox/webapp",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -17,12 +17,12 @@
   "dependencies": {
     "@mantou/gem": "^2.2.2",
     "@mantou/nes": "^1.0.15",
-    "@mantou/nes-sandbox": "^0.0.13",
+    "@sadsha-gamebox/nes-sandbox": "^0.0.13",
     "@mantou/ruffle-core": "^0.1.1",
-    "@nesbox/arcade": "^0.0.1",
-    "@nesbox/fceux": "^0.0.1",
-    "@nesbox/mtapp": "^0.0.1",
-    "@nesbox/wasm4": "^0.0.1",
+    "@sadsha-gamebox/arcade": "^0.0.1",
+    "@sadsha-gamebox/fceux": "^0.0.1",
+    "@sadsha-gamebox/mtapp": "^0.0.1",
+    "@sadsha-gamebox/wasm4": "^0.0.1",
     "duoyun-ui": "^2.2.2",
     "front-matter": "^4.0.2",
     "graphql": "^16.2.0",
@@ -37,7 +37,7 @@
     "@graphql-codegen/typescript": "^2.4.1",
     "@graphql-codegen/typescript-document-nodes": "^2.2.1",
     "@graphql-codegen/typescript-operations": "^2.2.1",
-    "@nesbox/config": "^0.0.1",
+    "@sadsha-gamebox/config": "^0.0.1",
     "@tauri-apps/api": "1.0.0-rc.7",
     "@types/dom-screen-wake-lock": "^1.0.1",
     "@types/dom-speech-recognition": "^0.0.1",

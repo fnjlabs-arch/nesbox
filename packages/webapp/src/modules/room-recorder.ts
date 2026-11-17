@@ -65,7 +65,7 @@ export class MRoomRecorderElement extends GemElement {
   render = () => {
     const { recorder } = this.#state;
     return html`
-      <nesbox-tooltip
+      <sadsha-gamebox-tooltip
         .content=${recorder ? i18n.get('tooltip.game.stopRecord') : i18n.get('tooltip.game.startRecord')}
         position="topRight"
       >
@@ -74,7 +74,7 @@ export class MRoomRecorderElement extends GemElement {
           .element=${icons.screenRecord}
           @click=${this.#onClick}
         ></dy-use>
-      </nesbox-tooltip>
+      </sadsha-gamebox-tooltip>
     `;
   };
 }

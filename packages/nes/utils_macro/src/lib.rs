@@ -3,7 +3,7 @@ use quote::quote;
 use syn::{parse_macro_input, ItemFn};
 
 #[proc_macro_attribute]
-pub fn nesbox_bevy(_: TokenStream, item: TokenStream) -> TokenStream {
+pub fn sadsha_gamebox_bevy(_: TokenStream, item: TokenStream) -> TokenStream {
     let input = parse_macro_input!(item as ItemFn);
     let create_app = &input.sig.ident;
     let tokens = quote! {

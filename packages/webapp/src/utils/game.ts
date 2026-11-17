@@ -4,7 +4,7 @@ import { clamp } from 'duoyun-ui/lib/number';
 import { once } from 'duoyun-ui/lib/timer';
 import type { Cheat, Combo } from 'src/configure';
 import { COMMAND, VideoRefreshRate } from 'src/constants';
-import type { NesboxCanvasElement } from 'src/elements/canvas';
+import type { SadShaGameBoxCanvasElement } from 'src/elements/canvas';
 import { logger } from 'src/logger';
 
 export function requestFrame(render: () => void, generator = VideoRefreshRate.AUTO) {
@@ -50,7 +50,7 @@ export function requestFrame(render: () => void, generator = VideoRefreshRate.AU
 }
 
 const rectCache = new Cache<DOMRect>({ maxAge: 500, renewal: true });
-export const positionMapping = (event: PointerEvent, canvas: NesboxCanvasElement) => {
+export const positionMapping = (event: PointerEvent, canvas: SadShaGameBoxCanvasElement) => {
   const stage = rectCache.get('', () => canvas.canvasRef.value!.getBoundingClientRect());
   const aspectRadio = canvas.width / canvas.height;
   const width = aspectRadio > stage.width / stage.height ? stage.width : aspectRadio * stage.height;
@@ -126,7 +126,7 @@ export async function createGame(filename: string, romBuffer: ArrayBuffer, sampl
 
   switch (fragments.pop()) {
     case 'zip': {
-      const { Arcade } = await import('@nesbox/arcade');
+      const { Arcade } = await import('@sadsha-gamebox/arcade');
       const game = Arcade.new(sampleRate);
       await game.load_rom(new Uint8Array(romBuffer), fragments.join('.'));
       return game;
@@ -142,7 +142,7 @@ export async function createGame(filename: string, romBuffer: ArrayBuffer, sampl
     }
     case 'wasm': {
       if (fragments.pop() === 'wasm4') {
-        const { Wasm4 } = await import('@nesbox/wasm4');
+        const { Wasm4 } = await import('@sadsha-gamebox/wasm4');
         const game = Wasm4.new(sampleRate);
         await game.load_rom(new Uint8Array(romBuffer));
         return game;
@@ -154,7 +154,7 @@ export async function createGame(filename: string, romBuffer: ArrayBuffer, sampl
       }
     }
     case 'js': {
-      const { JsGame } = await import('@mantou/nes-sandbox');
+      const { JsGame } = await import('@sadsha-gamebox/nes-sandbox');
       const game = JsGame.new(sampleRate);
       await game.load_rom(new Uint8Array(romBuffer));
       return game;
@@ -166,7 +166,7 @@ export async function createGame(filename: string, romBuffer: ArrayBuffer, sampl
         game.load_rom(new Uint8Array(romBuffer));
         return game;
       } else {
-        const { Nes } = await import('@nesbox/fceux');
+        const { Nes } = await import('@sadsha-gamebox/fceux');
         const game = Nes.new(sampleRate);
         await game.load_rom(new Uint8Array(romBuffer));
         return game;

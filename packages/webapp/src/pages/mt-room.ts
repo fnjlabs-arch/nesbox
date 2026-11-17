@@ -114,8 +114,8 @@ export class PMtRoomElement extends DuoyunWakeLockBaseElement {
     return html`
       <m-stage ${this.#stageRef} class="stage"  .padding=${'2em 0 5em'}></m-stage>
       <dy-space class="info">
-        <nesbox-fps v-if=${this.#playing?.host === configure.user?.id}></nesbox-fps>
-        <nesbox-ping v-else></nesbox-ping>
+        <sadsha-gamebox-fps v-if=${this.#playing?.host === configure.user?.id}></sadsha-gamebox-fps>
+        <sadsha-gamebox-ping v-else></sadsha-gamebox-ping>
         <m-room-voice ${this.#voiceRef} class="icon" ></m-room-voice>
       </dy-space>
     `;

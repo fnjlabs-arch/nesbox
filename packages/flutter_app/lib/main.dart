@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/home.dart';
+import 'package:sadsha_gamebox/home.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);

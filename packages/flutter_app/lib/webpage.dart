@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:flutter_app/utils.dart';
-import 'package:flutter_app/eventbus.dart';
+import 'package:sadsha_gamebox/utils.dart';
+import 'package:sadsha_gamebox/eventbus.dart';
 
 class WebPage extends StatefulWidget {
   final String url;

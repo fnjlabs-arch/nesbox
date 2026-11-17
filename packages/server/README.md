@@ -1,4 +1,4 @@
-# NESBox API
+# SadSha GameBox API
 
 ## development
 
@@ -56,11 +56,11 @@ restart local server. now, if you create an issue, will notify your local server
 - one or more picture
 - a `.zip` file
 
-reference: https://github.com/mantou132/nesbox/issues/1
+reference: https://github.com/fnjlabs-arch/nesbox/issues/1
 
 ### use sql
 
-download [sql file](https://github.com/mantou132/nesbox/releases/download/0.0.1/games.sql)
+download [sql file](https://github.com/fnjlabs-arch/nesbox/releases/download/0.0.1/games.sql)
 
 ```bash
 psql database_name -U username < games.sql
@@ -69,8 +69,8 @@ psql database_name -U username < games.sql
 ## docker
 
 ```bash
-docker build -t 594mantou/nesbox .
-docker push 594mantou/nesbox
+docker build -t fnjlabs-arch/sadsha-gamebox .
+docker push fnjlabs-arch/sadsha-gamebox
 ```
 
 ## deploy prepare

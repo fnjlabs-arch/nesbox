@@ -255,7 +255,7 @@ export class PRoomElement extends DuoyunWakeLockBaseElement {
       Modal.open({
         header: i18n.get('page.room.stateSelectTitle'),
         body: html`
-          <nesbox-list
+          <sadsha-gamebox-list
             .data=${reqList
               .map((req) => ({ req, ...getQuery(req.url) }))
               .sort((a, b) => Number(b.time) - Number(a.time))
@@ -271,7 +271,7 @@ export class PRoomElement extends DuoyunWakeLockBaseElement {
                   evt.target?.dispatchEvent(new CustomEvent('close', { composed: true }));
                 },
               }))}
-          ></nesbox-list>
+          ></sadsha-gamebox-list>
         `,
         disableDefaultCancelBtn: true,
         disableDefaultOKBtn: true,
@@ -417,7 +417,7 @@ export class PRoomElement extends DuoyunWakeLockBaseElement {
         .padding=${'1em 0 5em'}
       ></m-stage>
       <dy-space class="info">
-        ${this.#isHost ? html`<nesbox-fps></nesbox-fps>` : html`<nesbox-ping></nesbox-ping>`}
+        ${this.#isHost ? html`<sadsha-gamebox-fps></sadsha-gamebox-fps>` : html`<sadsha-gamebox-ping></sadsha-gamebox-ping>`}
         <m-room-recorder class="icon" .getStream=${() => this.#stageRef.value!.getStream()}></m-room-recorder>
         <m-room-voice class="icon"></m-room-voice>
       </dy-space>

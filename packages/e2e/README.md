@@ -1,4 +1,4 @@
-# NESBox E2E Test
+# SadSha GameBox E2E Test
 
 ## test
 

@@ -9,7 +9,7 @@ import {
   registerEntity,
   SizeComponent,
   TextAreaComponent,
-} from '@mantou/ecs';
+} from '@sadsha-gamebox/ecs';
 import { NewPieceComponent, PieceComponent } from 'src/components';
 import {
   BORDER_COLOR,

@@ -1,4 +1,4 @@
-use nesbox_utils::prelude::*;
+use sadsha_gamebox_utils::prelude::*;
 use std::{mem::swap, str::FromStr, time::Duration};
 use strum::IntoEnumIterator;
 use strum_macros::{Display, EnumIter, EnumString};
@@ -799,7 +799,7 @@ fn global_handle(input: Res<ButtonInput>, mut next: ResMut<NextState<AppState>>)
     }
 }
 
-#[nesbox_bevy]
+#[sadsha_gamebox_bevy]
 fn create_app() -> App {
     let mut app = create_bevy_app(WIDTH, HEIGHT, Color::default());
 

@@ -1,8 +1,8 @@
 {
-  "name": "@nesbox/mtapp",
+  "name": "@sadsha-gamebox/mtapp",
   "version": "0.0.1",
   "module": "index.ts",
   "devDependencies": {
-    "@nesbox/config": "^0.0.1"
+    "@sadsha-gamebox/config": "^0.0.1"
   }
 }

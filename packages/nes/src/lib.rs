@@ -1,6 +1,6 @@
 // ref: https://github.com/lukexor/tetanes/blob/main/web/src/lib.rs
 
-use nesbox_utils::prelude::*;
+use sadsha_gamebox_utils::prelude::*;
 use tetanes::{
     audio::{AudioMixer, NesAudioCallback},
     common::{Kind, Reset},

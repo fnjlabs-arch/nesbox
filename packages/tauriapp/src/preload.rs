@@ -95,7 +95,7 @@ impl<R: Runtime> Plugin<R> for PreloadPlugin<R> {
                     configurable: true,
                 }});
                 Object.defineProperty(navigator, 'appName', {{
-                    value: 'nesbox-{os}',
+                    value: 'sadsha-gamebox-{os}',
                     configurable: true,
                 }});
                 Object.defineProperty(navigator, 'setAppBadge', {{

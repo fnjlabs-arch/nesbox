@@ -1,4 +1,4 @@
-import { encodeFont, type Font } from '@mantou/ecs';
+import { encodeFont, type Font } from '@sadsha-gamebox/ecs';
 import { adoptedStyle, createState, css, customElement, effect, GemElement, html } from '@mantou/gem';
 import type { DuoyunFormItemElement } from 'duoyun-ui/elements/form';
 import { theme } from 'duoyun-ui/lib/theme';

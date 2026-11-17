@@ -124,9 +124,9 @@ export class MMtNavElement extends GemElement {
         )}
       </div>
       <div class="status">
-        <nesbox-net class="net"></nesbox-net>
-        <nesbox-battery class="battery"></nesbox-battery>
-        <nesbox-time class="time"></nesbox-time>
+        <sadsha-gamebox-net class="net"></sadsha-gamebox-net>
+        <sadsha-gamebox-battery class="battery"></sadsha-gamebox-battery>
+        <sadsha-gamebox-time class="time"></sadsha-gamebox-time>
       </div>
     `;
   };

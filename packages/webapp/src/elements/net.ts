@@ -25,10 +25,10 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-net')
+@customElement('sadsha-gamebox-net')
 @adoptedStyle(style)
 @shadow()
-export class NesboxNetElement extends GemElement {
+export class SadShaGameBoxNetElement extends GemElement {
   @state effective: boolean;
 
   @mounted()

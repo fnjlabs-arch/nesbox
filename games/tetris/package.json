@@ -1,5 +1,5 @@
 {
-  "name": "@nesbox/tetris",
+  "name": "@sadsha-gamebox/tetris",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -9,13 +9,13 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@mantou/ecs": "^0.0.3",
+    "@sadsha-gamebox/ecs": "^0.0.3",
     "qoijs": "^1.0.0"
   },
   "devDependencies": {
     "@ffflorian/jszip-cli": "^3.1.9",
-    "@mantou/nes-sandbox": "^0.0.8",
-    "@nesbox/config": "^0.0.1",
+    "@sadsha-gamebox/nes-sandbox": "^0.0.13",
+    "@sadsha-gamebox/config": "^0.0.1",
     "esbuild": "^0.17.10"
   }
 }

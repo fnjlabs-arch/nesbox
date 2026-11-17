@@ -1,14 +1,14 @@
 {
-  "desc": "Find your favorite game and call your friends, no matter how far you are, you can enjoy the game immediately on the NESBox, save the progress, continue next time.",
-  "feature1Desc": "NESBox collected a large number of games. After starting your favorite game, Nesbox will create a room, you can invite friends to play together.",
+  "desc": "Find your favorite game and call your friends, no matter how far you are, you can enjoy the game immediately on the SadSha GameBox, save the progress, continue next time.",
+  "feature1Desc": "SadSha GameBox collected a large number of games. After starting your favorite game, SadSha GameBox will create a room, you can invite friends to play together.",
   "feature1Title": "Massive games for you to choose",
-  "feature2Desc": "NESBox reliable technology allows you and your friends to conduct low-latency videos and audio transmission, just like playing in the same room.",
+  "feature2Desc": "SadSha GameBox reliable technology allows you and your friends to conduct low-latency videos and audio transmission, just like playing in the same room.",
   "feature2Title": "High-quality game experience",
-  "feature3Desc": "NESBox can synchronize your keys, rendering settings, and sound settings. When you switch the device, you can quickly play the game.",
+  "feature3Desc": "SadSha GameBox can synchronize your keys, rendering settings, and sound settings. When you switch the device, you can quickly play the game.",
   "feature3Title": "Synchronize your settings",
   "journey": "Ready to start your journey?",
   "page.homepage.downloadBtn": "Download",
   "page.homepage.header": "Enjoy Games",
-  "page.homepage.openBtn": "Open NESBox",
+  "page.homepage.openBtn": "Open SadSha GameBox",
   "tip.homepage.notSupport": "Do not support the mobile"
 }

@@ -14,7 +14,7 @@ import {
   styleMap,
 } from '@mantou/gem';
 import { mediaQuery } from '@mantou/gem/helper/mediaquery';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import type { DuoyunListElement, PersistentState } from 'duoyun-ui/elements/list';
 import { isNotNullish } from 'duoyun-ui/lib/types';
 import { queryKeys } from 'src/constants';

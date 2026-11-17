@@ -1,6 +1,6 @@
 import { mediaQuery } from '@mantou/gem/helper/mediaquery';
 import type { Button, Player } from '@mantou/nes';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import type { ValueOf } from 'duoyun-ui/lib/types';
 import type { GamepadBtnIndex } from 'src/gamepad';
 
@@ -8,14 +8,14 @@ export const RELEASE = Number(process.env.RELEASE);
 // https://vitejs.dev/guide/api-javascript.html#resolveconfig
 export const COMMAND = process.env.COMMAND as 'serve' | 'build';
 
-export const isTauriMacApp = navigator.appName === 'nesbox-macos';
-export const isTauriWinApp = navigator.appName === 'nesbox-windows';
+export const isTauriMacApp = navigator.appName === 'sadsha-gamebox-macos';
+export const isTauriWinApp = navigator.appName === 'sadsha-gamebox-windows';
 export const isApp = window.__TAURI__ || mediaQuery.isPWA || isMtApp;
 export const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 export const canonicalOrigin = 'https://nesbox.xianqiao.wang';
 export const corsOrigin = 'https://files.xianqiao.wang';
-export const githubUrl = 'https://github.com/mantou132/nesbox';
+export const githubUrl = 'https://github.com/fnjlabs-arch/nesbox';
 export const githubIssue = `${githubUrl}/issues`;
 export const githubRelease = `${githubUrl}/releases`;
 

@@ -67,9 +67,9 @@ const style = css`
 `;
 
 @adoptedStyle(style)
-@customElement('nesbox-canvas')
+@customElement('sadsha-gamebox-canvas')
 @shadow()
-export class NesboxCanvasElement extends GemElement {
+export class SadShaGameBoxCanvasElement extends GemElement {
   @numattribute width: number;
   @numattribute height: number;
   @attribute filter: VideoFilter;

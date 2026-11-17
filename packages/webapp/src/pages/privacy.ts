@@ -21,8 +21,8 @@ export class PPrivacyElement extends GemElement {
     return html`
       <dy-heading>Privacy Policy</dy-heading>
       <dy-paragraph>
-        NESBox's server will save your registered account and your favorite game list, and NESBox guarantees that it
-        will not review and disclose these information. Apart from this, NESBox will not collect and request any other
+        SadSha GameBox's server will save your registered account and your favorite game list, and SadSha GameBox guarantees that it
+        will not review and disclose these information. Apart from this, SadSha GameBox will not collect and request any other
         personal data from you.
       </dy-paragraph>
     `;

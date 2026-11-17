@@ -29,7 +29,7 @@ import {
   VideoFilter,
   VideoRenderMethod,
 } from 'src/constants';
-import type { NesboxCanvasElement } from 'src/elements/canvas';
+import type { SadShaGameBoxCanvasElement } from 'src/elements/canvas';
 import { ScGamePlatform } from 'src/generated/graphql';
 import { logger } from 'src/logger';
 import type { MRoomChatElement } from 'src/modules/room-chat';
@@ -108,7 +108,7 @@ export class MStageElement extends GemElement {
 
   #audioRef = createRef<HTMLAudioElement>();
   #chatRef = createRef<MRoomChatElement>();
-  #canvasRef = createRef<NesboxCanvasElement>();
+  #canvasRef = createRef<SadShaGameBoxCanvasElement>();
 
   #state = createState({
     messages: [] as TextMsg[],
@@ -654,7 +654,7 @@ export class MStageElement extends GemElement {
     const { messages, roles, canvasWidth, canvasHeight, rotate } = this.#state;
 
     return html`
-      <nesbox-canvas
+      <sadsha-gamebox-canvas
         ${this.#canvasRef}
         class="canvas"
         .width=${canvasWidth}
@@ -665,7 +665,7 @@ export class MStageElement extends GemElement {
           padding: this.padding,
           imageRendering: this.#settings?.video.render || VideoRenderMethod.PIXELATED,
         })}
-      ></nesbox-canvas>
+      ></sadsha-gamebox-canvas>
       <audio ${this.#audioRef} hidden></audio>
       <m-room-chat
         ${this.#chatRef}

@@ -1,6 +1,6 @@
 # Sandbox
 
-A secure runtime for running JavaScript games in NESBox.
+A secure runtime for running JavaScript games in SadSha GameBox.
 
 ## Example
 

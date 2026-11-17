@@ -1,8 +1,8 @@
 [package]
-name = "nesbox_utils_macro"
+name = "sadsha_gamebox_utils_macro"
 version = "0.0.3"
 edition = "2021"
-description = "macro provided for nesbox_utils"
+description = "macro provided for sadsha_gamebox_utils"
 license = "MIT"
 
 [lib]

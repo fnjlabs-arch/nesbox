@@ -1,4 +1,4 @@
-# NESBox for Desktop
+# SadSha GameBox for Desktop
 
 ## development
 

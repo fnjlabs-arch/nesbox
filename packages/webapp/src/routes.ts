@@ -1,6 +1,6 @@
 import { connect, createStore, html } from '@mantou/gem';
 import { GemRouteElement, type RouteItem } from '@mantou/gem/elements/route';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import type { ValueOf } from 'duoyun-ui/lib/types';
 import { paramKeys } from 'src/constants';
 import { i18n, i18nStore } from 'src/i18n/basic';

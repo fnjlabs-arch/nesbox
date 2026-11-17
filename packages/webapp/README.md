@@ -1,6 +1,6 @@
-# NESBox for Web
+# SadSha GameBox for Web
 
-Design [prototype](https://www.figma.com/file/N6DxApZl41524ey9fVL6LF/NESBox)
+Design [prototype](https://www.figma.com/file/N6DxApZl41524ey9fVL6LF/SadSha GameBox)
 
 ## codegen
 

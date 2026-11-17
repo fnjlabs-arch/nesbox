@@ -27,7 +27,7 @@ impl Settings {
 
     pub fn get_branch_url(&self) -> Option<AppUrl> {
         let branch_url = match self.branch.as_str() {
-            "dev" => "https://nesbox-dev.xianqiao.wang",
+            "dev" => "https://sadsha-gamebox-dev.xianqiao.wang",
             _ => "",
         };
         if !branch_url.is_empty() {

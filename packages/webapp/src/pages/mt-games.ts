@@ -57,10 +57,10 @@ const style = css`
     .rotor {
       height: var(--size);
     }
-    nesbox-rotor {
+    sadsha-gamebox-rotor {
       width: var(--size);
     }
-    nesbox-rotor::part(other) {
+    sadsha-gamebox-rotor::part(other) {
       opacity: 0;
     }
   }
@@ -174,7 +174,7 @@ export class PMtGamesElement extends GemElement {
                 [locationStore.query.toString()],
                 (key) => key,
                 () => html`
-                <nesbox-rotor
+                <sadsha-gamebox-rotor
                   ?inert=${!!mtGamesStore.focusId}
                   .finite=${this.#data!.length < 3}
                   @change=${({ detail }: CustomEvent<number>) => mtGamesStore({ currentIndex: detail })}
@@ -186,7 +186,7 @@ export class PMtGamesElement extends GemElement {
                     handle: () => createRoom({ gameId: id, private: false }),
                     detail: () => this.#onDetail(id),
                   }))}
-                ></nesbox-rotor>
+                ></sadsha-gamebox-rotor>
               `,
               )}`
             : html`<dy-heading><dy-empty></dy-empty></dy-heading>`
@@ -200,11 +200,11 @@ export class PMtGamesElement extends GemElement {
           </dy-use>
         </div>
       </div>
-      <nesbox-scroll v-if=${!!mtGamesStore.focusId && !!game} class="info">
+      <sadsha-gamebox-scroll v-if=${!!mtGamesStore.focusId && !!game} class="info">
         <dy-heading lv="1">${game?.name}</dy-heading>
         <dy-divider></dy-divider>
         <m-game-detail .game=${game}></m-game-detail>
-      </nesbox-scroll>
+      </sadsha-gamebox-scroll>
     `;
   };
 }

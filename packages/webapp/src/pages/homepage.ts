@@ -219,7 +219,7 @@ const style = css`
 export class PHomepageElement extends GemElement {
   #download = async () => {
     if (navigator.userAgent.includes('Android')) {
-      open(getCorSrc('https://github.com/mantou132/nesbox/releases/download/v1.0.8/nesbox.apk'));
+      open(getCorSrc('https://github.com/fnjlabs-arch/nesbox/releases/download/v1.0.8/nesbox.apk'));
       return;
     }
     if (mediaQuery.isPhone) {
@@ -311,7 +311,7 @@ export class PHomepageElement extends GemElement {
         <section class="screenshot">
           <div class="content">
             <img
-              alt="NESBox Screenshot"
+              alt="SadSha GameBox Screenshot"
               draggable="false"
               width="800"
               height="530"

@@ -79,10 +79,10 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-rotor')
+@customElement('sadsha-gamebox-rotor')
 @adoptedStyle(style)
 @shadow()
-export class NesboxRotorElement extends GemElement {
+export class SadShaGameBoxRotorElement extends GemElement {
   @boolattribute inert: boolean;
   @boolattribute finite: boolean;
   @numattribute index: number;

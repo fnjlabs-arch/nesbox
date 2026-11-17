@@ -57,22 +57,22 @@ const tick = () => {
   timer = requestAnimationFrame(tick);
 };
 
-@customElement('nesbox-fps')
+@customElement('sadsha-gamebox-fps')
 @adoptedStyle(fpsStyle)
 @connectStore(store)
 @shadow()
-export class NesboxFpsElement extends GemElement {
-  static instanceSet: Set<NesboxFpsElement> = new Set();
+export class SadShaGameBoxFpsElement extends GemElement {
+  static instanceSet: Set<SadShaGameBoxFpsElement> = new Set();
 
   @mounted()
   #init = () => {
-    NesboxFpsElement.instanceSet.add(this);
-    if (NesboxFpsElement.instanceSet.size === 1) {
+    SadShaGameBoxFpsElement.instanceSet.add(this);
+    if (SadShaGameBoxFpsElement.instanceSet.size === 1) {
       timer = requestAnimationFrame(tick);
     }
     return () => {
-      NesboxFpsElement.instanceSet.delete(this);
-      if (NesboxFpsElement.instanceSet.size === 0) {
+      SadShaGameBoxFpsElement.instanceSet.delete(this);
+      if (SadShaGameBoxFpsElement.instanceSet.size === 0) {
         cancelAnimationFrame(timer);
       }
     };

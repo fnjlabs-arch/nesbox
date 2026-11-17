@@ -73,7 +73,7 @@ export class MFooterElement extends GemElement {
       </div>
       <dy-divider></dy-divider>
       <footer>
-        NESBox © Copyright | <dy-link .route=${routes.privacy as RouteItem}>${routes.privacy.title}</dy-link>
+        SadSha GameBox © Copyright | <dy-link .route=${routes.privacy as RouteItem}>${routes.privacy.title}</dy-link>
       </footer>
     `;
   };

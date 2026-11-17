@@ -67,7 +67,7 @@ export class MKeybindingElement extends GemElement {
           >${i18n.get('settings.keybinding.reset')}</dy-button
         >
       </div>
-      <nesbox-gamepad
+      <sadsha-gamebox-gamepad
         .value=${{
           Up: keybinding.Up,
           Left: keybinding.Left,
@@ -88,7 +88,7 @@ export class MKeybindingElement extends GemElement {
             ...keybinding,
             ...detail,
           })}
-      ></nesbox-gamepad>
+      ></sadsha-gamebox-gamepad>
 
       <div class="header">
         <dy-heading class="heading" lv="4">${i18n.get('settings.keybinding.joypad2')}</dy-heading>
@@ -112,7 +112,7 @@ export class MKeybindingElement extends GemElement {
           >${i18n.get('settings.keybinding.reset')}</dy-button
         >
       </div>
-      <nesbox-gamepad
+      <sadsha-gamebox-gamepad
         .value=${{
           Up: keybinding.Up_2,
           Left: keybinding.Left_2,
@@ -142,7 +142,7 @@ export class MKeybindingElement extends GemElement {
             TurboB_2: detail.TurboB,
             TurboC_2: detail.TurboC,
           })}
-      ></nesbox-gamepad>
+      ></sadsha-gamebox-gamepad>
     `;
   };
 }

@@ -1,6 +1,6 @@
 import { mediaQuery } from '@mantou/gem/helper/mediaquery';
 import { createTheme, getThemeStore } from '@mantou/gem/helper/theme';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import { darkTheme, theme as duoyunTheme } from 'duoyun-ui/lib/theme';
 import { configure } from 'src/configure';
 import { i18n } from 'src/i18n/basic';

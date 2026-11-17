@@ -1,5 +1,5 @@
 {
-  "name": "@nesbox/toolbox",
+  "name": "@sadsha-gamebox/toolbox",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -10,14 +10,14 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@mantou/ecs": "^0.0.3",
+    "@sadsha-gamebox/ecs": "^0.0.3",
     "@mantou/gem": "^2.2.2",
     "duoyun-ui": "^2.2.2",
     "jszip": "^3.10.0",
     "qoijs": "^1.0.0"
   },
   "devDependencies": {
-    "@nesbox/config": "^0.0.1",
+    "@sadsha-gamebox/config": "^0.0.1",
     "vite": "^6.3.5"
   }
 }

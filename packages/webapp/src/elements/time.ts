@@ -7,9 +7,9 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-time')
+@customElement('sadsha-gamebox-time')
 @adoptedStyle(style)
-export class NesboxTimeElement extends GemElement {
+export class SadShaGameBoxTimeElement extends GemElement {
   @mounted()
   #init = () => {
     let timer = 0;

@@ -1,4 +1,4 @@
-/// <reference types="@mantou/nes-sandbox/types" />
+/// <reference types="@sadsha-gamebox/nes-sandbox/types" />
 
 declare module '*.data' {
   const data: Uint8Array;

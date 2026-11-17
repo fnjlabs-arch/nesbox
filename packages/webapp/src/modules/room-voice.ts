@@ -1,5 +1,5 @@
 import { connectStore, createState, createStore, customElement, effect, GemElement, html } from '@mantou/gem';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import { configure } from 'src/configure';
 import { globalEvents, type VoiceSignalDetail } from 'src/constants';
 import { ScVoiceMsgKind } from 'src/generated/graphql';
@@ -150,12 +150,12 @@ export class MVoiceRoomElement extends GemElement {
   render = () => {
     const { joined } = this.#state;
     return html`
-      <nesbox-tooltip
+      <sadsha-gamebox-tooltip
         .content=${joined ? i18n.get('tooltip.room.stopVoice') : i18n.get('tooltip.room.startVoice')}
         position=${isMtApp ? 'bottomRight' : 'topRight'}
       >
         <dy-use class="icon" @click=${this.toggleVoice} .element=${joined ? icons.mic : icons.micOff}></dy-use>
-      </nesbox-tooltip>
+      </sadsha-gamebox-tooltip>
     `;
   };
 }

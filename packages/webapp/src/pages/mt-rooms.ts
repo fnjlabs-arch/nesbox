@@ -19,7 +19,7 @@ const style = css`
     flex-direction: column-reverse;
     padding: ${theme.gridGutter} calc(2 * ${theme.gridGutter});
   }
-  nesbox-rotor::part(img) {
+  sadsha-gamebox-rotor::part(img) {
     border: 1px solid ${theme.borderColor};
   }
 `;
@@ -36,7 +36,7 @@ export class PMtRoomsElement extends GemElement {
     const index = store.roomIds?.findIndex((id) => mtRoomsStore.currentId === id) || 0;
 
     return html`
-      <nesbox-rotor
+      <sadsha-gamebox-rotor
         v-if=${!!store.roomIds?.length}
         @change=${({ detail }: CustomEvent<number>) => mtRoomsStore({ currentId: store.roomIds?.[detail] })}
         .index=${index >= 0 ? index : 0}
@@ -47,7 +47,7 @@ export class PMtRoomsElement extends GemElement {
           img: store.rooms[id]?.screenshot || getCDNSrc(store.games[store.rooms[id]?.gameId || 0]?.preview || ''),
           handle: () => enterPubRoom(id),
         }))}
-      ></nesbox-rotor>
+      ></sadsha-gamebox-rotor>
       <dy-heading v-else><dy-empty></dy-empty></dy-heading>
     `;
   };

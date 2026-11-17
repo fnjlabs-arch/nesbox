@@ -12,7 +12,7 @@ import {
   mounted,
 } from '@mantou/gem';
 import { mediaQuery } from '@mantou/gem/helper/mediaquery';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import type { DuoyunFormElement } from 'duoyun-ui/elements/form';
 import { createPath } from 'duoyun-ui/elements/route';
 import { hotkeys } from 'duoyun-ui/lib/hotkeys';
@@ -245,11 +245,11 @@ export class PLoginElement extends GemElement {
       </div>
       <m-guest ?hidden=${isMtApp || mediaQuery.isPhone}></m-guest>
       <div class="bg-copyright">
-        <nesbox-tooltip .content=${i18n.get('tooltip.login.imgCopyright')}>
+        <sadsha-gamebox-tooltip .content=${i18n.get('tooltip.login.imgCopyright')}>
           <dy-link @click=${() => open('https://dribbble.com/shots/10244007-Old-tech-devices-2')}>
             @Tanner Wayment
           </dy-link>
-        </nesbox-tooltip>
+        </sadsha-gamebox-tooltip>
       </div>
     `;
   };

@@ -118,10 +118,10 @@ export type GamePadValue = {
   Reset: string;
 };
 
-@customElement('nesbox-gamepad')
+@customElement('sadsha-gamebox-gamepad')
 @adoptedStyle(style)
 @shadow()
-export class NesboxGamepadElement extends GemElement {
+export class SadShaGameBoxGamepadElement extends GemElement {
   @property value?: GamePadValue;
 
   @emitter change: Emitter<GamePadValue>;

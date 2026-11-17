@@ -1,5 +1,5 @@
 {
-  "name": "@nesbox/arcade",
+  "name": "@sadsha-gamebox/arcade",
   "version": "0.0.1",
   "description": "",
   "module": "src/index.ts",
@@ -9,10 +9,10 @@
   },
   "peerDependencies": {
     "@mantou/nes": "^1.0.15",
-    "@mantou/nes-sandbox": "^0.0.13"
+    "@sadsha-gamebox/nes-sandbox": "^0.0.13"
   },
   "devDependencies": {
-    "@nesbox/config": "^0.0.1",
+    "@sadsha-gamebox/config": "^0.0.1",
     "@types/emscripten": "^1.39.6"
   }
 }

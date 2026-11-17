@@ -1,4 +1,4 @@
-# Tetris for NESBox
+# Tetris for SadSha GameBox
 
 ## development
 

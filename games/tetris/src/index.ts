@@ -1,4 +1,4 @@
-import { decodeFontBuf, loadAudio, loadFont, loadSprite, World } from '@mantou/ecs';
+import { decodeFontBuf, loadAudio, loadFont, loadSprite, World } from '@sadsha-gamebox/ecs';
 import arialBlackBuf from 'assets/arialBlack.data';
 import courierNewBuf from 'assets/courierNew.data';
 import soundBytes from 'assets/game_over.data';

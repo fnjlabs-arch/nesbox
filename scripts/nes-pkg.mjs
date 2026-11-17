@@ -28,7 +28,7 @@ function executeShellCommand(command, cwd = process.cwd()) {
   });
 }
 
-// 用 debug 模式生成包含 nesbox_bevy app 相关的代码，这让 js 胶水代码同时兼容 nes 模拟器和 nesbox_bevy app.
+// 用 debug 模式生成包含 sadsha_gamebox_bevy app 相关的代码，这让 js 胶水代码同时兼容 nes 模拟器和 sadsha_gamebox_bevy app.
 await executeShellCommand('yarn build:nes --debug');
 
 const nesPkgJson = await import('../packages/nes-pkg/package.json', { with: { type: 'json' } });

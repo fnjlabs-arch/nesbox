@@ -1,5 +1,5 @@
 import { adoptedStyle, css, customElement, GemElement, html, property } from '@mantou/gem';
-import { isMtApp } from '@nesbox/mtapp';
+import { isMtApp } from '@sadsha-gamebox/mtapp';
 import { marked } from 'marked';
 import type { Game } from 'src/store';
 

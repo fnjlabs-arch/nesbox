@@ -6,7 +6,7 @@ import {
   SelectComponent,
   TextAreaComponent,
   type World,
-} from '@mantou/ecs';
+} from '@sadsha-gamebox/ecs';
 import { NewPieceComponent, PieceComponent } from 'src/components';
 import {
   ADD_SPEED_SCORE,

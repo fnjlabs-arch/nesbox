@@ -34,7 +34,7 @@ const style = css`
 const getLink = (src = '') => {
   try {
     const url = new URL(src);
-    url.searchParams.append('utm_source', 'nesbox');
+    url.searchParams.append('utm_source', 'sadsha-gamebox');
     return url.href;
   } catch {
     return '';

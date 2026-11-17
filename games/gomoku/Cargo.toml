@@ -7,7 +7,7 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-nesbox_utils = { path = "../../packages/nes/utils" }
+sadsha_gamebox_utils = { path = "../../packages/nes/utils" }
 strum = "0.28"
 strum_macros = "0.28"
 

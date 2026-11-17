@@ -1,5 +1,5 @@
 {
-  "name": "@mantou/nes-sandbox",
+  "name": "@sadsha-gamebox/nes-sandbox",
   "version": "0.0.13",
   "description": "",
   "module": "src/index.ts",
@@ -12,6 +12,6 @@
     "@mantou/nes": "^1.0.15"
   },
   "devDependencies": {
-    "@nesbox/config": "^0.0.1"
+    "@sadsha-gamebox/config": "^0.0.1"
   }
 }

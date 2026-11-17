@@ -9,7 +9,7 @@ import {
   SelectComponent,
   SizeComponent,
   TextAreaComponent,
-} from '@mantou/ecs';
+} from '@sadsha-gamebox/ecs';
 import {
   BACKGROUND_COLOR,
   ENTITY,
@@ -191,7 +191,7 @@ export function getSceneAndData(label: SCENE) {
                 .addComponent(new MaterialComponent(COLOR_GRAY))
                 .addComponent(
                   new TextAreaComponent(
-                    `This is the first game released on NESBox mantou132, which is written in JavaScript, which is mainly used for learning goals.\n\nIf you are interested in NESBox, or have any suggestions, please contact me.\n\n\nThanks!`,
+                    `This is the first game released on SadSha GameBox mantou132, which is written in JavaScript, which is mainly used for learning goals.\n\nIf you are interested in SadSha GameBox, or have any suggestions, please contact me.\n\n\nThanks!`,
                     { width: WIDTH - 80 },
                   ),
                 ),

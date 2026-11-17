@@ -3,7 +3,7 @@
 import init from '@mantou/fbneo/fbneo-arcade';
 import wasmURL from '@mantou/fbneo/fbneo-arcade.wasm?url';
 import type { Button, Nes as ONes, Player } from '@mantou/nes';
-import { decodeQoiFrame, encodeQoiFrame } from '@mantou/nes-sandbox';
+import { decodeQoiFrame, encodeQoiFrame } from '@sadsha-gamebox/nes-sandbox';
 
 import { Controllers } from './input';
 

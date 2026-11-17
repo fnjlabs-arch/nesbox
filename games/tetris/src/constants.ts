@@ -1,4 +1,4 @@
-import { Color } from '@mantou/ecs';
+import { Color } from '@sadsha-gamebox/ecs';
 
 export const WIDTH = 256;
 export const HEIGHT = 240;

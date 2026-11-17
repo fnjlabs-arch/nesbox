@@ -1,5 +1,5 @@
 import { history, QueryString, render, type TemplateResult } from '@mantou/gem';
-import { isMtApp, mtApp } from '@nesbox/mtapp';
+import { isMtApp, mtApp } from '@sadsha-gamebox/mtapp';
 import { matchPath, type RouteItem } from 'duoyun-ui/elements/route';
 import { changeLoading } from 'duoyun-ui/elements/wait';
 import { formatTraffic } from 'duoyun-ui/lib/number';
@@ -22,7 +22,7 @@ export const getCorSrc = (url: string) => {
 };
 
 export const getCDNSrc = (url: string) => {
-  // return `https://nesbox-cdn.liuben.fun/${url}`;
+  // return `https://sadsha-gamebox-cdn.liuben.fun/${url}`;
   return getCorSrc(url);
 };
 

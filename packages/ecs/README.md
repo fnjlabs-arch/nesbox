@@ -1,6 +1,6 @@
 # ECS
 
-A simple JavaScript ECS library for NESBox Sandbox
+A simple JavaScript ECS library for SadSha GameBox Sandbox
 
 ## Example
 

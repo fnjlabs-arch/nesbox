@@ -123,7 +123,7 @@ export class MSettingsElement extends GemElement {
             getContent() {
               return html`
                 <dy-tab-panel>
-                  <nesbox-license></nesbox-license>
+                  <sadsha-gamebox-license></sadsha-gamebox-license>
                 </dy-tab-panel>
               `;
             },

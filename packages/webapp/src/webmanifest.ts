@@ -4,7 +4,7 @@ import { routes } from 'src/routes';
 
 export function genWebManifest() {
   return {
-    id: `com.nesbox${COMMAND === 'serve' ? '.dev' : ''}`,
+    id: `com.sadsha.gamebox${COMMAND === 'serve' ? '.dev' : ''}`,
     name: i18n.get('global.title') + (COMMAND === 'serve' ? '(DEV)' : ''),
     short_name: i18n.get('global.title'),
     categories: ['entertainment', 'games'],
@@ -75,25 +75,25 @@ export function genWebManifest() {
     ],
     screenshots: [
       {
-        src: 'https://raw.githubusercontent.com/mantou132/nesbox/master/screenshots/homepage.png',
+        src: 'https://raw.githubusercontent.com/fnjlabs-arch/nesbox/master/screenshots/homepage.png',
         sizes: '1280x861',
         type: 'image/png',
         form_factor: 'wide',
-        label: 'HomeScreen of NESBox',
+        label: 'HomeScreen of SadSha GameBox',
       },
       {
-        src: 'https://raw.githubusercontent.com/mantou132/nesbox/master/screenshots/playing.png',
+        src: 'https://raw.githubusercontent.com/fnjlabs-arch/nesbox/master/screenshots/playing.png',
         sizes: '1280x861',
         type: 'image/png',
         form_factor: 'wide',
-        label: 'Playing game in NESBox',
+        label: 'Playing game in SadSha GameBox',
       },
       {
-        src: 'https://raw.githubusercontent.com/mantou132/nesbox/master/screenshots/settings.png',
+        src: 'https://raw.githubusercontent.com/fnjlabs-arch/nesbox/master/screenshots/settings.png',
         sizes: '1280x861',
         type: 'image/png',
         form_factor: 'wide',
-        label: 'Settings in NESBox',
+        label: 'Settings in SadSha GameBox',
       },
     ],
   };

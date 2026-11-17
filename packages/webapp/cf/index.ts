@@ -17,7 +17,7 @@ import {
   bm25Search,
   chunkText,
   embedding,
-  fetchNesbox,
+  fetchSadShaGameBox,
   fetchWikiHTML,
   htmlToMarkdown,
   MAX_CHUNKS_PER_GAME,
@@ -255,7 +255,7 @@ export default {
         (async () => {
           try {
             await log({ status: 'start' });
-            const { data } = await fetchNesbox<GetGamesQuery, GetGamesQueryVariables>(GetGames, {});
+            const { data } = await fetchSadShaGameBox<GetGamesQuery, GetGamesQueryVariables>(GetGames, {});
             await log({ status: 'info', total: data.games.length });
             await upsertGames(env, data.games, { full: true, log });
             await log({ status: 'done' });

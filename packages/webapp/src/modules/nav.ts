@@ -166,7 +166,7 @@ export class MNavElement extends GemElement {
   #renderLinks = () => {
     return [routes.games, routes.favorites, routes.rooms].map(
       (route: RouteItem) => html`
-        <nesbox-nav-link class="link" .route=${route} .pattern=${route.pattern}>${route.title}</nesbox-nav-link>
+        <sadsha-gamebox-nav-link class="link" .route=${route} .pattern=${route.pattern}>${route.title}</sadsha-gamebox-nav-link>
       `,
     );
   };
@@ -176,7 +176,7 @@ export class MNavElement extends GemElement {
     const gameId = playing?.gameId || 0;
 
     return html`
-      <nesbox-tooltip .position=${'bottom'} .content=${i18n.get('tooltip.room.leave')}>
+      <sadsha-gamebox-tooltip .position=${'bottom'} .content=${i18n.get('tooltip.room.leave')}>
         <dy-use
           data-cy="back"
           class="icon"
@@ -185,12 +185,12 @@ export class MNavElement extends GemElement {
           .element=${icons.left}
           @click=${() => waitLoading(leaveRoom())}
         ></dy-use>
-      </nesbox-tooltip>
+      </sadsha-gamebox-tooltip>
       ${
         playing?.host !== configure.user?.id
           ? html`<div class="title">${store.games[gameId]?.name}</div>`
           : html`
-            <nesbox-tooltip .position=${'bottom'} .content=${i18n.get('tooltip.game.change')}>
+            <sadsha-gamebox-tooltip .position=${'bottom'} .content=${i18n.get('tooltip.game.change')}>
               <dy-action-text
                 class="title"
                 tabindex="0"
@@ -199,7 +199,7 @@ export class MNavElement extends GemElement {
               >
                 ${store.games[gameId]?.name}
               </dy-action-text>
-            </nesbox-tooltip>
+            </sadsha-gamebox-tooltip>
           `
       }
       ${this.#renderFavoriteBtn(gameId)}
@@ -209,7 +209,7 @@ export class MNavElement extends GemElement {
   #renderFavoriteBtn = (gameId: number) => {
     const favorited = store.favoriteIds?.includes(gameId);
     return html`
-      <nesbox-tooltip
+      <sadsha-gamebox-tooltip
         .position=${'bottom'}
         .content=${favorited ? i18n.get('tooltip.game.cancelFavorite') : i18n.get('tooltip.game.favorite')}
       >
@@ -221,7 +221,7 @@ export class MNavElement extends GemElement {
           .element=${favorited ? icons.favorited : icons.favorite}
           @click=${() => favoriteGame(gameId, !favorited)}
         ></dy-use>
-      </nesbox-tooltip>
+      </sadsha-gamebox-tooltip>
     `;
   };
 

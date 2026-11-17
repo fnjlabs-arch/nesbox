@@ -9,10 +9,10 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-scroll')
+@customElement('sadsha-gamebox-scroll')
 @adoptedStyle(style)
 @shadow()
-export class NesboxScrollElement extends DuoyunScrollBaseElement {
+export class SadShaGameBoxScrollElement extends DuoyunScrollBaseElement {
   #pressButton = (evt: CustomEvent<GamepadBtnIndex>) => {
     switch (evt.detail) {
       case GamepadBtnIndex.Up:

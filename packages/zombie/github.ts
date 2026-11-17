@@ -21,7 +21,7 @@ async function wrieteIssue({ cover, description, screenshots, title }: Data) {
     data: { number },
   } = await octokit.request('POST /repos/{owner}/{repo}/issues', {
     owner: 'mantou132',
-    repo: 'nesbox',
+    repo: 'sadsha-gamebox',
     title,
     body: `
 ![](${cover})
@@ -38,7 +38,7 @@ ${screenshots.map((s, index) => `![screenshot ${index + 1}](${s})`).join('\n')}
 
   await writeFile(resolve(__dirname, 'github.json'), JSON.stringify({ ...issues, [title]: number }, null, 2));
 
-  execSync(`open https://github.com/mantou132/nesbox/issues/${number}`);
+  execSync(`open https://github.com/fnjlabs-arch/nesbox/issues/${number}`);
 }
 
 const first = [...originMetadata1, ...originMetadata2, ...originMetadata3].find(

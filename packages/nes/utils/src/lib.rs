@@ -10,7 +10,7 @@ pub mod prelude {
     pub use bevy::core::*;
     pub use bevy::ecs::system::*;
     pub use bevy::prelude::*;
-    pub use nesbox_utils_macro::nesbox_bevy;
+    pub use sadsha_gamebox_utils_macro::sadsha_gamebox_bevy;
     pub use rand::prelude::random;
     pub use wasm_bindgen;
     pub use wasm_bindgen::prelude::*;

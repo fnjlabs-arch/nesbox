@@ -1,6 +1,6 @@
 import { history, html, render, styleMap } from '@mantou/gem';
 import { mediaQuery } from '@mantou/gem/helper/mediaquery';
-import { isMtApp, mtApp } from '@nesbox/mtapp';
+import { isMtApp, mtApp } from '@sadsha-gamebox/mtapp';
 import { DuoyunDropAreaElement } from 'duoyun-ui/elements/drop-area';
 import { createPath } from 'duoyun-ui/elements/route';
 import { initApp } from 'duoyun-ui/helper/webapp';

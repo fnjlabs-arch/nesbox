@@ -11,13 +11,13 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-license')
+@customElement('sadsha-gamebox-license')
 @connectStore(store)
 @adoptedStyle(style)
-export class NesboxLicenseElement extends GemElement {
+export class SadShaGameBoxLicenseElement extends GemElement {
   @mounted()
   #init = () => {
-    const url = getCorSrc('https://raw.githubusercontent.com/mantou132/nesbox/dev/LICENSE');
+    const url = getCorSrc('https://raw.githubusercontent.com/fnjlabs-arch/nesbox/dev/LICENSE');
     fetch(url)
       .then((res) => res.text())
       .then((license) => {

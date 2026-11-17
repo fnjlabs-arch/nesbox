@@ -1,11 +1,11 @@
-# nesbox_utils
+# sadsha_gamebox_utils
 
-A utils functional for developing games for the NESBox
+A utils functional for developing games for the SadSha GameBox
 
 ## Example
 
 ```rust
-use nesbox_utils::prelude::*;
+use sadsha_gamebox_utils::prelude::*;
 
 fn global_handle(input: Res<ButtonInput>, mut next: ResMut<NextState<AppState>>) {
     if input.get_input(Player::One).just_pressed(Button::Reset) {
@@ -13,7 +13,7 @@ fn global_handle(input: Res<ButtonInput>, mut next: ResMut<NextState<AppState>>)
     }
 }
 
-#[nesbox_bevy]
+#[sadsha_gamebox_bevy]
 fn create_app() -> App {
     let mut app = create_bevy_app(256, 240, Color::default());
 

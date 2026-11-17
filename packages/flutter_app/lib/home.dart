@@ -6,10 +6,10 @@ import 'package:battery_plus/battery_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/config.dart';
-import 'package:flutter_app/eventbus.dart';
-import 'package:flutter_app/utils.dart';
-import 'package:flutter_app/webpage.dart';
+import 'package:sadsha_gamebox/config.dart';
+import 'package:sadsha_gamebox/eventbus.dart';
+import 'package:sadsha_gamebox/utils.dart';
+import 'package:sadsha_gamebox/webpage.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 var battery = Battery();

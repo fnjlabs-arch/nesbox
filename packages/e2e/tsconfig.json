@@ -1,5 +1,5 @@
 {
-  "extends": "@nesbox/config/tsconfig",
+  "extends": "@sadsha-gamebox/config/tsconfig",
   "compilerOptions": {
     "baseUrl": "./",
     "types": ["cypress", "cypress-wait-until"]

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:flutter_app/config.dart';
+import 'package:sadsha_gamebox/config.dart';
 
 var isIOS = defaultTargetPlatform == TargetPlatform.iOS;
 

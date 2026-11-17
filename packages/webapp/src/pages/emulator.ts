@@ -18,7 +18,7 @@ import { hotkeys } from 'duoyun-ui/lib/hotkeys';
 import { locale } from 'duoyun-ui/lib/locale';
 import { clamp } from 'duoyun-ui/lib/number';
 import { configure, defaultKeybinding, setNesFile } from 'src/configure';
-import type { NesboxCanvasElement } from 'src/elements/canvas';
+import type { SadShaGameBoxCanvasElement } from 'src/elements/canvas';
 import { routes } from 'src/routes';
 import { createGame, mapPointerButton, positionMapping, requestFrame, watchDevRom } from 'src/utils/game';
 
@@ -54,7 +54,7 @@ const style = css`
 @adoptedStyle(style)
 @connectStore(configure)
 export class PEmulatorElement extends GemElement {
-  #canvasRef = createRef<NesboxCanvasElement>();
+  #canvasRef = createRef<SadShaGameBoxCanvasElement>();
 
   #state = createState({
     canvasWidth: 0,
@@ -232,13 +232,13 @@ export class PEmulatorElement extends GemElement {
     const { canvasWidth, canvasHeight, rotate } = this.#state;
 
     return html`
-      <nesbox-canvas
+      <sadsha-gamebox-canvas
         ${this.#canvasRef}
         class="canvas"
         .width=${canvasWidth}
         .height=${canvasHeight}
         .rotate=${rotate}
-      ></nesbox-canvas>
+      ></sadsha-gamebox-canvas>
       <div class="nodata" ?hidden=${!!configure.openNesFile}>
         <dy-heading lv="1">${locale.noData}</dy-heading>
         <dy-link .route=${routes.games as RouteItem}><dy-button>Back to Games</dy-button></dy-link>

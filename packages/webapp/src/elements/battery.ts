@@ -33,10 +33,10 @@ const style = css`
   }
 `;
 
-@customElement('nesbox-battery')
+@customElement('sadsha-gamebox-battery')
 @adoptedStyle(style)
 @shadow()
-export class NesboxBatteryElement extends GemElement {
+export class SadShaGameBoxBatteryElement extends GemElement {
   #state = createState({
     charging: false,
     level: 1,

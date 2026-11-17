@@ -1,5 +1,5 @@
 import { Button, type Nes as ONes, Player } from '@mantou/nes';
-import { decodeQoiFrame, encodeQoiFrame } from '@mantou/nes-sandbox';
+import { decodeQoiFrame, encodeQoiFrame } from '@sadsha-gamebox/nes-sandbox';
 import {
   ADDR_GAMEPAD1,
   ADDR_MOUSE_BUTTONS,

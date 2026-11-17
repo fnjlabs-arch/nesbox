@@ -8,7 +8,7 @@
     "distDir": "https://nesbox.xianqiao.wang"
   },
   "package": {
-    "productName": "NESBox",
+    "productName": "SadSha GameBox",
     "version": "1.0.8"
   },
   "tauri": {
@@ -33,7 +33,7 @@
       },
       "externalBin": [],
       "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
-      "identifier": "271mantou132.NESBoxOnline",
+      "identifier": "com.sadsha.gamebox",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -57,14 +57,14 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://files.xianqiao.wang/https://github.com/mantou132/nesbox/releases/latest/download/latest-version.json"
+        "https://files.xianqiao.wang/https://github.com/fnjlabs-arch/nesbox/releases/latest/download/latest-version.json"
       ],
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY4RkE0QjM0NTQ4NDY2NzMKUldSelpvUlVORXY2YVBKMittNHVxN3Q0Q0VxWXpVVHRnY2dBWktNMHZLRFZPR1RiREhoQksrczEK"
     },
     "windows": [
       {
-        "title": "NESBox",
+        "title": "SadSha GameBox",
         "width": 1024,
         "height": 640,
         "fileDropEnabled": false,

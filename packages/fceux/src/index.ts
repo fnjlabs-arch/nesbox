@@ -3,7 +3,7 @@ import init, { type FceuxModule } from '@mantou/fceux';
 // @ts-ignore
 import wasmURL from '@mantou/fceux/fceux.wasm?url';
 import type { Button, Nes as ONes, Player } from '@mantou/nes';
-import { decodeQoiFrame, encodeQoiFrame } from '@mantou/nes-sandbox';
+import { decodeQoiFrame, encodeQoiFrame } from '@sadsha-gamebox/nes-sandbox';
 
 import { Controllers } from './input';
 

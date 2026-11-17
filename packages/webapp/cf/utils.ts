@@ -21,7 +21,7 @@ export function truncateByBytes(str = '', maxBytes = 10000) {
   return decoder.decode(slicedBuf).replace(/\uFFFD/g, '');
 }
 
-export async function fetchNesbox<Result, InputVar>(query: string, variables: InputVar) {
+export async function fetchSadShaGameBox<Result, InputVar>(query: string, variables: InputVar) {
   const res = await fetch(`https://api.xianqiao.wang/nesbox/guestgraphql`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -173,7 +173,7 @@ export async function fetchWikiHTML(url: URL) {
   const params = new URLSearchParams({ action: 'parse', prop: 'text', format: 'json', page });
   const res = await fetch(`${url.origin}/w/api.php?${params}`, {
     headers: {
-      'User-Agent': 'NESBox/1.0 (https://nesbox.xianqiao.wang; 594mantou@gmail.com)',
+      'User-Agent': 'SadSha GameBox/1.0 (https://nesbox.xianqiao.wang; 594mantou@gmail.com)',
     },
   });
   const data = await res.json();
